@@ -1,0 +1,147 @@
+{
+  "artist": {
+    "name": "Artist Name",
+    "tagline": "Official Website",
+    "heroImage": "/assets/hero.jpg",
+    "pressImages": [],
+    "socials": {
+      "instagram": "https://instagram.com/artist",
+      "tiktok": "https://tiktok.com/@artist",
+      "youtube": "https://youtube.com/@artist",
+      "spotify": "https://open.spotify.com/artist/example",
+      "apple": "https://music.apple.com/artist/example",
+      "soundcloud": "https://soundcloud.com/artist",
+      "twitter": "https://twitter.com/artist",
+      "facebook": "https://facebook.com/artist"
+    }
+  },
+  "seo": {
+    "siteTitle": "Artist Name - Official Website",
+    "description": "Official website of Artist Name. Stream music, watch videos, tour dates, and more.",
+    "ogImage": "/og.png",
+    "themeColor": "#000000",
+    "canonicalBaseUrl": "https://example.com"
+  },
+  "rollout": {
+    "mode": "presave",
+    "campaignName": "NEW SINGLE",
+    "primaryCtaLabel": "Pre-Save Now",
+    "primaryCtaUrl": "https://example.com/presave",
+    "bannerEnabled": true,
+    "bannerText": "NEW SINGLE — PRE-SAVE NOW",
+    "disableOldCtas": false
+  },
+  "featuredReleases": [
+    {
+      "title": "Featured Single",
+      "statusLabel": "PRE-SAVE",
+      "coverImage": "/assets/release-cover.jpg",
+      "releaseDate": "2024-01-15",
+      "primaryCta": {
+        "label": "Pre-Save Now",
+        "url": "https://example.com/presave"
+      },
+      "platformLinks": {
+        "spotify": "https://open.spotify.com/track/example",
+        "apple": "https://music.apple.com/us/album/example",
+        "youtube": "https://youtube.com/watch?v=example",
+        "soundcloud": "https://soundcloud.com/artist/track",
+        "amazon": "https://music.amazon.com/albums/example",
+        "tidal": "https://tidal.com/browse/track/example"
+      }
+    }
+  ],
+  "music": [
+    {
+      "id": "1",
+      "title": "Latest Album",
+      "type": "album",
+      "artwork": "/assets/album-cover.jpg",
+      "releaseDate": "2024-01-01",
+      "links": {
+        "spotify": "https://open.spotify.com/album/example",
+        "apple": "https://music.apple.com/us/album/example",
+        "youtubeMusic": "https://music.youtube.com/playlist?list=example",
+        "soundcloud": "https://soundcloud.com/artist/sets/album",
+        "amazon": "https://music.amazon.com/albums/example"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Recent Single",
+      "type": "single",
+      "artwork": "/assets/single-cover.jpg",
+      "releaseDate": "2024-01-15",
+      "links": {
+        "spotify": "https://open.spotify.com/track/example",
+        "apple": "https://music.apple.com/us/album/example",
+        "youtubeMusic": "https://music.youtube.com/watch?v=example",
+        "soundcloud": "https://soundcloud.com/artist/track",
+        "amazon": "https://music.amazon.com/albums/example"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "title": "Featured Music Video",
+      "youtubeId": "dQw4w9WgXcQ",
+      "date": "2024-01-01",
+      "featured": true,
+      "tags": ["Music Video", "Official"]
+    },
+    {
+      "id": "2",
+      "title": "Live Performance",
+      "youtubeId": "dQw4w9WgXcQ",
+      "date": "2024-01-10",
+      "featured": true,
+      "tags": ["Live", "Performance"]
+    },
+    {
+      "id": "3",
+      "title": "Behind the Scenes",
+      "youtubeId": "dQw4w9WgXcQ",
+      "date": "2024-01-05",
+      "featured": false,
+      "tags": ["Behind the Scenes", "BTS"]
+    }
+  ],
+  "tour": {
+    "mode": "list",
+    "bandsintownWidgetUrl": "",
+    "dates": [
+      {
+        "id": "1",
+        "date": "2024-02-15",
+        "city": "Los Angeles",
+        "venue": "The Forum",
+        "ticketUrl": "https://example.com/tickets/1"
+      },
+      {
+        "id": "2",
+        "date": "2024-02-20",
+        "city": "New York",
+        "venue": "Madison Square Garden",
+        "ticketUrl": "https://example.com/tickets/2"
+      },
+      {
+        "id": "3",
+        "date": "2024-02-25",
+        "city": "Chicago",
+        "venue": "United Center",
+        "ticketUrl": "https://example.com/tickets/3"
+      }
+    ]
+  },
+  "mailingList": {
+    "provider": "netlify",
+    "netlifyFormName": "mailing-list",
+    "mailtoEmail": "artist@example.com"
+  },
+  "contact": {
+    "bookingEmail": "booking@example.com",
+    "managementEmail": "management@example.com",
+    "pressEmail": "press@example.com"
+  }
+}
