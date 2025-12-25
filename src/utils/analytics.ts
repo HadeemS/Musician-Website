@@ -32,3 +32,4 @@ export function trackCTAClick(ctaType: string, url: string) {
 export function trackPageView(path: string) {
   trackEvent('page_view', path)
 }
+

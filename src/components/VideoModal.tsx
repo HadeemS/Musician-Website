@@ -103,3 +103,4 @@ export default function VideoModal({ youtubeId, onClose }: VideoModalProps) {
     </AnimatePresence>
   )
 }
+

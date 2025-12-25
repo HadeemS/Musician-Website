@@ -47,7 +47,7 @@ export default function Links() {
     links: group.links.filter((link) => link.url),
   }))
 
-  const handleClick = (label: string, url: string) => {
+  const handleClick = (_label: string, url: string) => {
     trackCTAClick('link', url)
     if (url.startsWith('http')) {
       window.open(url, '_blank', 'noopener,noreferrer')

@@ -7,3 +7,4 @@ export default defineConfig({
   // For GitHub Pages deployment, uncomment and set base path:
   // base: '/Musician-Website/',
 })
+
