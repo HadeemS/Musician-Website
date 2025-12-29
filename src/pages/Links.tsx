@@ -49,9 +49,10 @@ export default function Links() {
 
   const handleClick = (_label: string, url: string) => {
     trackCTAClick('link', url)
-    if (url.startsWith('http')) {
+    if (url.startsWith('http') || url.startsWith('//')) {
       window.open(url, '_blank', 'noopener,noreferrer')
     } else {
+      // Internal link - use React Router navigation
       window.location.href = url
     }
   }

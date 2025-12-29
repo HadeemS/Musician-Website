@@ -10,8 +10,11 @@ import Privacy from '../pages/Privacy'
 import NotFound from '../pages/NotFound'
 
 function App() {
+  // Get base path from Vite config or default to '/Musician-Website/' for GitHub Pages
+  const basePath = import.meta.env.BASE_URL || '/Musician-Website/'
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basePath}>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

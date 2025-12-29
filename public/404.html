@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages 404.html fallback for SPA routing
+      // Redirects to index.html to let React Router handle the routing
+      var basePath = '/Musician-Website/';
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      
+      // Remove base path from path if present
+      if (path.startsWith(basePath)) {
+        path = path.slice(basePath.length - 1);
+      }
+      
+      // Redirect to index.html
+      window.location.replace(basePath + 'index.html' + path + search + hash);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+    <noscript>
+      <p>Please enable JavaScript or <a href="/Musician-Website/">click here</a> to go to the homepage.</p>
+    </noscript>
+  </body>
+</html>
+

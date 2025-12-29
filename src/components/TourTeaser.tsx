@@ -43,7 +43,7 @@ export default function TourTeaser() {
                   href={date.ticketUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white text-black px-6 py-3 font-semibold hover:bg-gray-200 transition-colors focus-visible-ring inline-block text-center"
+                  className="bg-white text-black px-6 py-3 font-semibold hover:bg-gray-200 transition-colors focus-visible-ring inline-block text-center w-full sm:w-auto"
                 >
                   Get Tickets
                 </a>

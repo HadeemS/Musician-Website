@@ -99,7 +99,7 @@ export default function ReleaseHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
           onClick={handlePrimaryClick}
-          className="bg-white text-black px-12 py-4 text-lg font-semibold hover:bg-gray-200 transition-colors focus-visible-ring mb-8"
+          className="bg-white text-black px-8 md:px-12 py-3 md:py-4 text-base md:text-lg font-semibold hover:bg-gray-200 transition-colors focus-visible-ring mb-8 w-full sm:w-auto"
         >
           {primaryCTA.label}
         </motion.button>

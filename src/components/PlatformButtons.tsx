@@ -40,7 +40,7 @@ export default function PlatformButtons({ links, variant = 'secondary' }: Platfo
   }
 
   return (
-    <div className="flex flex-wrap justify-center gap-4">
+    <div className="flex flex-wrap justify-center gap-3 md:gap-4">
       {platforms.map(([key, url]) => {
         const config = platformConfig[key as keyof typeof platformConfig]
         if (!config) return null
@@ -49,7 +49,7 @@ export default function PlatformButtons({ links, variant = 'secondary' }: Platfo
           <button
             key={key}
             onClick={() => handleClick(key, url)}
-            className={`${baseClasses} px-6 py-3 font-medium transition-colors focus-visible-ring`}
+            className={`${baseClasses} px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-medium transition-colors focus-visible-ring whitespace-nowrap`}
           >
             <span className="mr-2">{config.icon}</span>
             {config.label}

@@ -26,7 +26,7 @@ export default function Videos() {
           href={siteConfig.artist.socials.youtube}
           target="_blank"
           rel="noopener noreferrer"
-          className="border border-white text-white px-8 py-3 font-semibold hover:bg-white hover:text-black transition-colors focus-visible-ring inline-block"
+          className="border border-white text-white px-6 md:px-8 py-3 font-semibold hover:bg-white hover:text-black transition-colors focus-visible-ring inline-block text-sm md:text-base"
         >
           Watch More on YouTube
         </a>

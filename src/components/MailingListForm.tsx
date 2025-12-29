@@ -71,7 +71,7 @@ export default function MailingListForm() {
           <input type="hidden" name="form-name" value={mailingList.netlifyFormName || 'mailing-list'} />
           <input type="hidden" name="bot-field" />
 
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <input
               type="email"
               name="email"
@@ -79,13 +79,13 @@ export default function MailingListForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email"
               required
-              className="flex-1 px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-white placeholder-gray-500"
+              className="flex-1 px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-white placeholder-gray-500 text-base"
             />
             <select
               name="country"
               value={country}
               onChange={(e) => setCountry(e.target.value)}
-              className="px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-white"
+              className="px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-white text-base"
             >
               <option value="">Select country (optional)</option>
               <option value="US">United States</option>
@@ -97,7 +97,7 @@ export default function MailingListForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="bg-white text-black px-8 py-3 font-semibold hover:bg-gray-200 transition-colors focus-visible-ring disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-white text-black px-6 md:px-8 py-3 font-semibold hover:bg-gray-200 transition-colors focus-visible-ring disabled:opacity-50 disabled:cursor-not-allowed text-base whitespace-nowrap"
             >
               {isSubmitting ? 'Submitting...' : 'Subscribe'}
             </button>
