@@ -6,23 +6,19 @@
     <title>Redirecting...</title>
     <script>
       // GitHub Pages 404.html fallback for SPA routing
-      // Redirects to index.html to let React Router handle the routing
+      // Simple redirect to index.html - React Router will handle the rest
       var basePath = '/Musician-Website/';
       var path = window.location.pathname;
       var search = window.location.search;
       var hash = window.location.hash;
       
-      // Remove base path from path if present
-      if (path.startsWith(basePath)) {
-        path = path.slice(basePath.length - 1);
-      }
-      
-      // Redirect to index.html
-      window.location.replace(basePath + 'index.html' + path + search + hash);
+      // Always redirect to index.html
+      window.location.replace(basePath + 'index.html' + search + hash);
     </script>
+    <meta http-equiv="refresh" content="0; url=/Musician-Website/index.html">
   </head>
   <body>
-    <p>Redirecting...</p>
+    <p>Redirecting to homepage...</p>
     <noscript>
       <p>Please enable JavaScript or <a href="/Musician-Website/">click here</a> to go to the homepage.</p>
     </noscript>
