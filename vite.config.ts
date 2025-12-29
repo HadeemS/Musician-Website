@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // For GitHub Pages deployment, uncomment and set base path:
-  // base: '/Musician-Website/',
+  // For GitHub Pages deployment, set base path to repository name:
+  base: '/Musician-Website/',
 })
 
 
